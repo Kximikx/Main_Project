@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: "Gentium";
+    src: local("GentiumBookPlus-Bold")
+         url('../Fons/Gentium/GentiumBookPlus-Bold.ttf') format ("opentype");
+    font-family: "Lato";
+    src: local("Lato-Regular")
+         url('../Fons/Lato/Lato-Regular.ttf') format ("opentype");
+     font-family: "Yeseva_One";
+     src: local("YesevaOne-Regular")
+            url('../Fons/Yeseva_One/YesevaOne-Regular.ttf') format ("opentype");
+}
+
+
+/* Основні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    padding-top: 70px;
+    background: url('../img/bg.png') no-repeat top center / cover !important;
+    padding-top: 220px;
+    padding-bottom: 225px ;
+        
+}
+
+.review-container {
+    max-width: 770px;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 79px;
+    padding-bottom: 104px;
+    color: white;
+    text-align: center;
+    margin: 0 auto; /* Центрування по горизонталі */
+}
+.parent-container { /* стилі для батьківського контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Займає всю висоту екрану */
+}
+
+
+
+
+.review-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Yeseva_One;
+}
+
+.review-text p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Gentium;
+}
+
+.review-author {
+    font-size: 18px;
+    color: #ccc;
+    font-family: Lato;
+}
+
+/* About Section */
+.about-section {
+    background: url('../img/pattern.png') ;
+    padding-top: 99px;
+    padding-bottom: 103px;
+    
+}
+.about_info {
+    display: flex;
+    justify-content: space-between;
+}
+.about-content {
+    width: 430px;
+    padding-bottom: 356px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #d4a017;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Yeseva_One;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-family: Lato;
+}
+
+.about-images {
+    width: 45%;
+    display: flex;
+    gap: 30px;
+}
+
+.about-images img {
+    width: 268px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+
